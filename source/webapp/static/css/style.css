@@ -121,3 +121,8 @@ body {
 .detail{
     margin-right: 15px;
 }
+
+.card-img, .card-img-top{
+    width: 250px;
+    height: 250px;
+}

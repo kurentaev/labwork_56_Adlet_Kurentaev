@@ -1,0 +1,80 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$EbKksnG417huqsPKDyJmVX$d87mqsorZLiB1JePbvOpiiwayahMk9bk/l+mikZdS2g=",
+    "last_login": "2022-10-03T03:33:20.232Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-01T16:26:30.554Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.productslist",
+  "pk": 1,
+  "fields": {
+    "title": "LORO PIANA",
+    "description": "This reversible brown bomber jacket from Loro Piana features a smooth Napa leather side, and a soft, curly shearling surface on the other, finished with cashmere trims. It also has a wide hood and large pockets for a sports-inspired twist.\r\n\r\n\r\nmaterial: 100% shearling\r\ndetails: 100% cashmere\r\ncare instructions: specialist clean\r\nside slit pockets\r\ntwo-way zipped front\r\nMade in Italy\r\nhood\r\nelasticated cuffs\r\nelasticated waistband\r\nDesigner colour name: Ebony Multi\r\ncomes with garment bag",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/35/P00585836.jpg",
+    "category": "jackets",
+    "rest": 10,
+    "price": "60.00"
+  }
+},
+{
+  "model": "webapp.productslist",
+  "pk": 2,
+  "fields": {
+    "title": "VALENTINO GARAVANI",
+    "description": "Back with an XL platform refresh, the One Stud low-top sneakers from Valentino Garavani are made from nappa leather and have a molded stud detail applied to one side and onto the rubber soles at the heel.\r\n\r\n\r\nupper: leather\r\nlining: leather\r\nsole: leather insole, rubber sole\r\nlace-up\r\nMade in Italy\r\ncomes with dust bags\r\ncomes with a box\r\nDesigner colour name: Bianco",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/b3/P00689115.jpg",
+    "category": "shoes",
+    "rest": 15,
+    "price": "10.00"
+  }
+},
+{
+  "model": "webapp.productslist",
+  "pk": 3,
+  "fields": {
+    "title": "TOM FORD",
+    "description": "Handcrafted in Los Angeles, these slim-fit Tom Ford jeans in blue have a straight leg, a classic five-pocket design and concealed buttoned fly\r\n\r\n\r\nmaterial: 98% cotton, 2% elastane\r\npocket lining: 100% cotton\r\ncare instructions: machine wash at 30 degrees\r\nfive pockets\r\nbuttoned placket\r\nMade in the USA\r\nbelt loops\r\nDesigner colour name: Md Blu Sld",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/51/P00652669.jpg",
+    "category": "jeans",
+    "rest": 20,
+    "price": "100.00"
+  }
+},
+{
+  "model": "webapp.productslist",
+  "pk": 4,
+  "fields": {
+    "title": "GUCCI",
+    "description": "This light blue shirt from Gucci is made from cotton, with double G embroidery at the chest. It has self-covered buttons and a boxy fit.\r\n\r\n\r\nmaterial: 100% cotton\r\ncare instructions: hand wash\r\nbreast pocket\r\nbuttoned front\r\nMade in Italy\r\nbuttoned cuffs\r\nDesigner colour name: Sky Blue",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/49/P00737498.jpg",
+    "category": "shirts",
+    "rest": 7,
+    "price": "250.00"
+  }
+},
+{
+  "model": "webapp.productslist",
+  "pk": 5,
+  "fields": {
+    "title": "TOM FORD",
+    "description": "Crafted from technical canvas, this duffel bag from Tom Ford is accented with leather trims and two top handles, comes with a removable shoulder strap and is finished with golden hardware for a signature touch.\r\n\r\n\r\nmaterial: polyester\r\ntrim: calf leather\r\ninternal details: fabric lining, internal zipped pocket, internal slot pockets\r\ncolour of fastening: gold\r\ndetachable, adjustable shoulder strap, top handles\r\ntwo-way zipped top\r\nMade in Italy\r\ncomes with dust bag\r\nDesigner colour name: Black",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/c6/P00596823.jpg",
+    "category": "other",
+    "rest": 13,
+    "price": "2000.00"
+  }
+}
+]

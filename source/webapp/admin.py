@@ -1,3 +1,14 @@
 from django.contrib import admin
 
-# Register your models here.
+from webapp.models import ProductsList
+
+
+class ProductsListAdmin(admin.ModelAdmin):
+    list_display = ['id', 'title', 'description', 'image', 'category', 'rest', 'price']
+    list_filter = ['id', 'title', 'description', 'image', 'category', 'rest', 'price']
+    search_fields = ['title', 'category']
+    fields = ['id', 'title', 'description', 'image', 'category', 'rest', 'price']
+    readonly_fields = ['id']
+
+
+admin.site.register(ProductsList, ProductsListAdmin)

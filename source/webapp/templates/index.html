@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      <main role="main" class="inner cover">
+        <p class="lead">
+            {% for product in products %}
+            <h2>{{ product.title }}</h2>
+            <img src="{{ product.image }}" class="card-img-top" alt="...">
+            <h2>Category:
+                {% for choice in choices %}
+                    {% if product.category == choice.0 %}
+                        {{ choice.1 }}
+                    {% endif %}
+                {% endfor %}
+            </h2>
+            <h2>Rest: {{ product.rest }}</h2>
+            <h2>Price: {{ product.price }} $</h2>
+            <hr>
+            {% endfor %}
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Kurentaev Adlet <a href="/">Contacts</a></p>
+        </div>
+      </footer>
+{% endblock %}
