@@ -126,4 +126,5 @@ body {
 .card-img, .card-img-top{
     width: 250px;
     height: 250px;
+    margin: 20px 30px;
 }

@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
-from webapp.models import ProductsList
+from webapp.models import Product
 from webapp.models import StatusChoices
 from webapp.forms import ProductsListForm
 
 
 def product_view(request, pk):
-    product = get_object_or_404(ProductsList, pk=pk)
+    product = get_object_or_404(Product, pk=pk)
     return render(request, 'product.html', context={'product': product, "choices": StatusChoices.choices})
 
 
@@ -25,12 +25,12 @@ def add_view(request):
                 'rest': request.POST.get('rest'),
                 'price': request.POST.get('price')
             }
-            product = ProductsList.objects.create(**product_data)
+            product = Product.objects.create(**product_data)
             return redirect('product_detail', pk=product.pk)
 
 
 def update_view(request, pk):
-    product = get_object_or_404(ProductsList, pk=pk)
+    product = get_object_or_404(Product, pk=pk)
     if request.method == 'GET':
         form = ProductsListForm(initial={
             'title': product.title,
@@ -54,11 +54,11 @@ def update_view(request, pk):
 
 
 def delete_view(request, pk):
-    product = get_object_or_404(ProductsList, pk=pk)
+    product = get_object_or_404(Product, pk=pk)
     return render(request, 'product_confirm_delete.html', context={'product': product})
 
 
 def confirm_delete(request, pk):
-    product = get_object_or_404(ProductsList, pk=pk)
+    product = get_object_or_404(Product, pk=pk)
     product.delete()
     return redirect('index')

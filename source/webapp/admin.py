@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from webapp.models import ProductsList
+from webapp.models import Product
 
 
 class ProductsListAdmin(admin.ModelAdmin):
@@ -11,4 +11,4 @@ class ProductsListAdmin(admin.ModelAdmin):
     readonly_fields = ['id']
 
 
-admin.site.register(ProductsList, ProductsListAdmin)
+admin.site.register(Product, ProductsListAdmin)

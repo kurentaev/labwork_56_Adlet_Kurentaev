@@ -10,7 +10,7 @@ class StatusChoices(TextChoices):
     SHIRTS = 'shirts', 'Shirts'
 
 
-class ProductsList(models.Model):
+class Product(models.Model):
     title = models.CharField(max_length=200, null=False, blank=False, verbose_name='Title')
     description = models.TextField(max_length=3000, null=True, blank=True, verbose_name='Description')
     image = models.TextField(
