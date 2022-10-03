@@ -9,6 +9,7 @@ Product
         <p class="lead">
           <h2>{{ product.title }} |
           <a href="{% url 'product_update' product.pk %}"><i class="bi bi-pencil-square"></i></a>
+          <a href="{% url 'product_delete' product.pk %}"><i class="bi bi-trash3-fill"></i></a>
           </h2>
           <img src="{{ product.image }}" class="card-img-top" alt="...">
             <h2>Category:

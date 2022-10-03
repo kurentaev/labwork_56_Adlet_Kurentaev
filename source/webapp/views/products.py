@@ -51,3 +51,14 @@ def update_view(request, pk):
         product.save()
         return redirect('product_detail', pk=product.pk)
     return render(request, 'product_update.html', context={'product': product})
+
+
+def delete_view(request, pk):
+    product = get_object_or_404(ProductsList, pk=pk)
+    return render(request, 'product_confirm_delete.html', context={'product': product})
+
+
+def confirm_delete(request, pk):
+    product = get_object_or_404(ProductsList, pk=pk)
+    product.delete()
+    return redirect('index')
