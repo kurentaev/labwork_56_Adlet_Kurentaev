@@ -120,6 +120,7 @@ body {
 
 .detail{
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .card-img, .card-img-top{

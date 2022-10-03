@@ -14,5 +14,9 @@ class ProductsListForm(forms.Form):
         required=True,
         label='Image')
     category = forms.ChoiceField(required=True, label='Category', choices=StatusChoices.choices)
-    rest = forms.IntegerField(required=True, min_value=0, verbose_name='Rest')
-    price = forms.DecimalField(required=True, max_digits=7, decimal_places=2, verbose_name='Price')
+    rest = forms.IntegerField(required=True, min_value=0, label='Rest')
+    price = forms.DecimalField(required=True, max_digits=7, decimal_places=2, label='Price')
+
+
+class ProductsSearchForm(forms.Form):
+    title = forms.CharField(max_length=200, required=True, label='')

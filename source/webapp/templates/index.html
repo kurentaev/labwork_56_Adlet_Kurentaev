@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <form action="" method="get">
+        {% include "partial/product_form.html" with button_text="Find" %}
+    </form>
+    <hr>
       <main role="main" class="inner cover">
         <p class="lead">
             {% for product in products %}
-            <h2>{{ product.title }}</h2>
+            <h2><a class="detail" href="{% url 'product_detail' product.pk %}">{{ product.title }}</a></h2>
             <img src="{{ product.image }}" class="card-img-top" alt="...">
             <h2>Category:
                 {% for choice in choices %}
@@ -13,7 +17,6 @@
                     {% endif %}
                 {% endfor %}
             </h2>
-            <h2>Rest: {{ product.rest }}</h2>
             <h2>Price: {{ product.price }} $</h2>
             <hr>
             {% endfor %}
