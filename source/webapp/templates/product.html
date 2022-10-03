@@ -7,7 +7,9 @@ Product
 {% block content %}
       <main role="main" class="inner cover">
         <p class="lead">
-          <h2>{{ task.title }}</h2>
+          <h2>{{ product.title }} |
+          <a href="{% url 'product_update' product.pk %}"><i class="bi bi-pencil-square"></i></a>
+          </h2>
           <img src="{{ product.image }}" class="card-img-top" alt="...">
             <h2>Category:
                 {% for choice in choices %}
@@ -19,6 +21,8 @@ Product
             <h2>Description: {{ product.description }}</h2>
             <h2>Rest: {{ product.rest }}</h2>
             <h2>Price: {{ product.price }} $</h2>
+
+
           <hr>
       </main>
 

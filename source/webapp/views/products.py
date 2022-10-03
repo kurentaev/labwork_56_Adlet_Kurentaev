@@ -23,8 +23,31 @@ def add_view(request):
                 'image': request.POST.get('image'),
                 'category': request.POST.get('category'),
                 'rest': request.POST.get('rest'),
-                'price': request.POST.get('price'),
+                'price': request.POST.get('price')
             }
             product = ProductsList.objects.create(**product_data)
             return redirect('product_detail', pk=product.pk)
 
+
+def update_view(request, pk):
+    product = get_object_or_404(ProductsList, pk=pk)
+    if request.method == 'GET':
+        form = ProductsListForm(initial={
+            'title': product.title,
+            'description': product.description,
+            'image': product.image,
+            'category': product.category,
+            'rest': product.rest,
+            'price': product.price
+        })
+        return render(request, 'product_update.html', context={'form': form, 'product': product})
+    elif request.method == 'POST':
+        product.title = request.POST.get('title')
+        product.description = request.POST.get('description')
+        product.image = request.POST.get('image')
+        product.category = request.POST.get('category')
+        product.rest = request.POST.get('rest')
+        product.price = request.POST.get('price')
+        product.save()
+        return redirect('product_detail', pk=product.pk)
+    return render(request, 'product_update.html', context={'product': product})
