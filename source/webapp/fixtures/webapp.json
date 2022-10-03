@@ -18,7 +18,7 @@
   }
 },
 {
-  "model": "webapp.productslist",
+  "model": "webapp.product",
   "pk": 1,
   "fields": {
     "title": "LORO PIANA",
@@ -30,7 +30,7 @@
   }
 },
 {
-  "model": "webapp.productslist",
+  "model": "webapp.product",
   "pk": 2,
   "fields": {
     "title": "VALENTINO GARAVANI",
@@ -42,7 +42,7 @@
   }
 },
 {
-  "model": "webapp.productslist",
+  "model": "webapp.product",
   "pk": 3,
   "fields": {
     "title": "TOM FORD",
@@ -54,7 +54,7 @@
   }
 },
 {
-  "model": "webapp.productslist",
+  "model": "webapp.product",
   "pk": 4,
   "fields": {
     "title": "GUCCI",
@@ -66,7 +66,7 @@
   }
 },
 {
-  "model": "webapp.productslist",
+  "model": "webapp.product",
   "pk": 5,
   "fields": {
     "title": "TOM FORD",
@@ -75,6 +75,30 @@
     "category": "other",
     "rest": 13,
     "price": "2000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 7,
+  "fields": {
+    "title": "VALENTINO GARAVANI",
+    "description": "Crafted in Italy from grained leather, this brown briefcase from Saint Laurent is embossed with the label's logo on the front. It comes with top handles and an adjustable shoulder strap.\r\n\r\n\r\nmaterial: leather\r\ninternal details: leather lining, internal zipped pocket, internal slot pockets\r\ndetachable, adjustable shoulder strap, top handles\r\nzipped top\r\nMade in Italy\r\nzipped front pocket\r\ncomes with dust bag\r\nDesigner colour name: Fondant/Antique Brass",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/1d/P00675760.jpg",
+    "category": "other",
+    "rest": 8,
+    "price": "1000.00"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 12,
+  "fields": {
+    "title": "LORO PIANA",
+    "description": "Made in Italy from the label's Storm System® Wind microfiber fabric, this waterproof and wind-resistant cap from Loro Piana has a checked underside, and an embroidered logo at the front.\r\nLoro Piana, kakoi loro piano, ya tebe otvechayu rodnoi loro piano eto, kakaya lora blyat'? loro piano smotri, kapec ty krutoi emae, eto che zhenskaya blyat', eto muzhskaya.\r\n\r\nmaterial: 100% polyester\r\nlining: 64% cotton, 36% polyester, partially lined\r\ncare instructions: dry clean\r\nMade in Italy\r\nDesigner colour name: Green/Min/Ivory\r\n",
+    "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/f8/P00641958.jpg",
+    "category": "other",
+    "rest": 10,
+    "price": "100.00"
   }
 }
 ]

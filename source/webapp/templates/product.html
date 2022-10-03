@@ -27,8 +27,7 @@ Product
                   </td>
               </tr>
           </table>
-          <h4>Description: {{ product.description }}</h4>
+          <h4>Description: {{ product.description | linebreaks }}</h4>
         <hr>
       </main>
-
 {% endblock %}
